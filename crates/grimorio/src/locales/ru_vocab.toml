@@ -1,0 +1,754 @@
+# Расширенный словарь эпитетов (сливается с ru.toml при сборке).
+
+[[epithet.stems]]
+text = "Труп"
+g = "m"
+n = "s"
+family = "corpse"
+tags = ["corpse"]
+
+[[epithet.stems]]
+text = "Дух"
+g = "m"
+n = "s"
+family = "spirit"
+tags = ["creature", "person"]
+
+[[epithet.stems]]
+text = "Духи"
+g = "m"
+n = "p"
+family = "spirit"
+tags = ["creature", "person"]
+
+[[epithet.stems]]
+text = "Трупы"
+g = "m"
+n = "p"
+family = "corpse"
+tags = ["corpse"]
+
+[[epithet.stems]]
+text = "Чёрная свеча"
+g = "f"
+n = "s"
+family = "black_candle"
+traits = ["flame"]
+
+[[epithet.stems]]
+text = "Чёрные свечи"
+g = "f"
+n = "p"
+family = "black_candle"
+traits = ["flame"]
+
+[[epithet.stems]]
+text = "Руна"
+g = "f"
+n = "s"
+family = "rune"
+
+[[epithet.stems]]
+text = "Руны"
+g = "f"
+n = "p"
+family = "rune"
+
+[[epithet.stems]]
+text = "Серп"
+g = "m"
+n = "s"
+family = "sickle"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Серпы"
+g = "m"
+n = "p"
+family = "sickle"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Железная цепь"
+g = "f"
+n = "s"
+family = "iron_chain"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Железные цепи"
+g = "f"
+n = "p"
+family = "iron_chain"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Кандал"
+g = "m"
+n = "s"
+family = "shackles"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Кандалы"
+g = "m"
+n = "p"
+family = "shackles"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Надгробие"
+g = "n"
+n = "s"
+family = "tombstone"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Надгробия"
+g = "n"
+n = "p"
+family = "tombstone"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Обсидиановая печать"
+g = "f"
+n = "s"
+family = "obsidian_seal"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Обсидиановые печати"
+g = "f"
+n = "p"
+family = "obsidian_seal"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Осколок пустоты"
+g = "m"
+n = "s"
+family = "void_shard"
+tags = ["object"]
+groups = ["emptiness"]
+
+[[epithet.stems]]
+text = "Осколки пустоты"
+g = "m"
+n = "p"
+family = "void_shard"
+tags = ["object"]
+groups = ["emptiness"]
+
+[[epithet.stems]]
+text = "Погребальная урна"
+g = "f"
+n = "s"
+family = "funeral_urn"
+tags = ["object", "vessel", "relic"]
+
+[[epithet.stems]]
+text = "Погребальные урны"
+g = "f"
+n = "p"
+family = "funeral_urn"
+tags = ["object", "vessel", "relic"]
+
+[[epithet.stems]]
+text = "Кадило"
+g = "n"
+n = "s"
+family = "censer"
+tags = ["object", "vessel", "flame"]
+
+[[epithet.stems]]
+text = "Кадила"
+g = "n"
+n = "p"
+family = "censer"
+tags = ["object", "vessel", "flame"]
+
+[[epithet.stems]]
+text = "Астролябия"
+g = "f"
+n = "s"
+family = "astrolabe"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Астролябии"
+g = "f"
+n = "p"
+family = "astrolabe"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Монолит"
+g = "m"
+n = "s"
+family = "monolith"
+tags = ["object"]
+unique = true
+
+[[epithet.stems]]
+text = "Монолиты"
+g = "m"
+n = "p"
+family = "monolith"
+tags = ["object"]
+unique = true
+
+[[epithet.stems]]
+text = "Метеорит"
+g = "m"
+n = "s"
+family = "meteorite"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Метеориты"
+g = "m"
+n = "p"
+family = "meteorite"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Гаргулья"
+g = "f"
+n = "s"
+family = "gargoyle"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Гаргульи"
+g = "f"
+n = "p"
+family = "gargoyle"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Разбитый витраж"
+g = "m"
+n = "s"
+family = "broken_stained_glass"
+tags = ["object"]
+groups = ["damage"]
+
+[[epithet.stems]]
+text = "Разбитые витражи"
+g = "m"
+n = "p"
+family = "broken_stained_glass"
+tags = ["object"]
+groups = ["damage"]
+
+[[epithet.stems]]
+text = "Змеиный клык"
+g = "m"
+n = "s"
+family = "serpent_fang"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Змеиные клыки"
+g = "m"
+n = "p"
+family = "serpent_fang"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Ключ склепа"
+g = "m"
+n = "s"
+family = "crypt_key"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Ключи склепа"
+g = "m"
+n = "p"
+family = "crypt_key"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Железная корона"
+g = "f"
+n = "s"
+family = "iron_crown"
+tags = ["object", "crown"]
+unique = true
+
+[[epithet.stems]]
+text = "Железные короны"
+g = "f"
+n = "p"
+family = "iron_crown"
+tags = ["object", "crown"]
+unique = true
+
+[[epithet.stems]]
+text = "Боевая коса"
+g = "f"
+n = "s"
+family = "war_scythe"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Боевые косы"
+g = "f"
+n = "p"
+family = "war_scythe"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Костяная флейта"
+g = "f"
+n = "s"
+family = "bone_flute"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Костяные флейты"
+g = "f"
+n = "p"
+family = "bone_flute"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Проклятый кандал"
+g = "m"
+n = "s"
+family = "hex_lock"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Проклятые кандалы"
+g = "m"
+n = "p"
+family = "hex_lock"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Бутыль ведьмы"
+g = "f"
+n = "s"
+family = "witch_bottle"
+tags = ["object", "vessel"]
+
+[[epithet.stems]]
+text = "Бутыли ведьмы"
+g = "f"
+n = "p"
+family = "witch_bottle"
+tags = ["object", "vessel"]
+
+[[epithet.qualifiers]]
+text = "подземелья"
+
+[[epithet.qualifiers]]
+text = "вечной ночи"
+
+[[epithet.qualifiers]]
+text = "древней крови"
+
+[[epithet.qualifiers]]
+text = "павшего трона"
+
+[[epithet.adjectives]]
+ms = "серебряный"
+fs = "серебряная"
+mp = "серебряные"
+fp = "серебряные"
+ns = "серебряное"
+np = "серебряные"
+group = "metal"
+tags = ["metal"]
+
+[[epithet.adjectives]]
+ms = "ядовитый"
+fs = "ядовитая"
+mp = "ядовитые"
+fp = "ядовитые"
+
+[[epithet.adjectives]]
+ms = "бездонный"
+fs = "бездонная"
+mp = "бездонные"
+fp = "бездонные"
+
+[[epithet.adjectives]]
+ms = "призрачный"
+fs = "призрачная"
+mp = "призрачные"
+fp = "призрачные"
+
+[[epithet.adjectives]]
+ms = "дикий"
+fs = "дикая"
+mp = "дикие"
+fp = "дикие"
+
+[[epithet.adjectives]]
+ms = "древний"
+fs = "древняя"
+mp = "древние"
+fp = "древние"
+
+[[epithet.adjectives]]
+ms = "гнилой"
+fs = "гнилая"
+mp = "гнилые"
+fp = "гнилые"
+group = "decay"
+
+[[epithet.adjectives]]
+ms = "эфирный"
+fs = "эфирная"
+mp = "эфирные"
+fp = "эфирные"
+
+[[epithet.adjectives]]
+ms = "безжалостный"
+fs = "безжалостная"
+mp = "безжалостные"
+fp = "безжалостные"
+kind = "living_trait"
+
+[[epithet.adjectives]]
+ms = "кровавый"
+fs = "кровавая"
+mp = "кровавые"
+fp = "кровавые"
+
+[[epithet.adjectives]]
+ms = "сумеречный"
+fs = "сумеречная"
+mp = "сумеречные"
+fp = "сумеречные"
+
+[[epithet.adjectives]]
+ms = "искажённый"
+fs = "искажённая"
+mp = "искажённые"
+fp = "искажённые"
+
+[[epithet.adjectives]]
+ms = "багровый"
+fs = "багровая"
+mp = "багровые"
+fp = "багровые"
+
+[[epithet.adjectives]]
+ms = "титанический"
+fs = "титаническая"
+mp = "титанические"
+fp = "титанические"
+
+[[epithet.curses]]
+ms = "проклятый"
+fs = "проклятая"
+mp = "проклятые"
+fp = "проклятые"
+
+[[epithet.curses]]
+ms = "отвергнутый"
+fs = "отвергнутая"
+mp = "отвергнутые"
+fp = "отвергнутые"
+
+[[epithet.curses]]
+ms = "анатематированный"
+fs = "анатематированная"
+mp = "анатематированные"
+fp = "анатематированные"
+
+[[epithet.verbal_states]]
+ms = "поглощённый"
+fs = "поглощённая"
+mp = "поглощённые"
+fp = "поглощённые"
+verb_tags = ["devour"]
+requires = ["corpse", "person", "creature"]
+
+[[epithet.verbal_states]]
+ms = "раздавленный"
+fs = "раздавленная"
+mp = "раздавленные"
+fp = "раздавленные"
+
+[[epithet.verbal_states]]
+ms = "призванный"
+fs = "призванная"
+mp = "призванные"
+fp = "призванные"
+
+[[epithet.verbal_states]]
+ms = "изгнанный"
+fs = "изгнанная"
+mp = "изгнанные"
+fp = "изгнанные"
+
+[[epithet.verbal_states]]
+ms = "разорванный"
+fs = "разорванная"
+mp = "разорванные"
+fp = "разорванные"
+
+[[epithet.verbal_states]]
+ms = "закованный"
+fs = "закованная"
+mp = "закованные"
+fp = "закованные"
+
+[[epithet.verbal_states]]
+ms = "погребённый"
+fs = "погребённая"
+mp = "погребённые"
+fp = "погребённые"
+
+[[epithet.verbal_states]]
+ms = "утопленный"
+fs = "утопленная"
+mp = "утопленные"
+fp = "утопленные"
+verb_tags = ["drown"]
+
+[[epithet.verbal_states]]
+ms = "преданный"
+fs = "преданная"
+mp = "преданные"
+fp = "преданные"
+kind = "agent_experience"
+
+[[epithet.verbal_states]]
+ms = "сожжённый"
+fs = "сожжённая"
+mp = "сожжённые"
+fp = "сожжённые"
+
+[[epithet.verbal_states]]
+ms = "пробуждённый"
+fs = "пробуждённая"
+mp = "пробуждённые"
+fp = "пробуждённые"
+kind = "agent_experience"
+
+[[epithet.verbal_agents]]
+text = "титаном"
+g = "m"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "титанами"
+g = "m"
+n = "p"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "драконом"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "Мойрами"
+g = "f"
+n = "p"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "морем"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "бурей"
+g = "f"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "мёртвыми"
+n = "p"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "богами"
+n = "p"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "судом"
+kind = "abstract"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "неизвестной силой"
+g = "f"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "безымянным ужасом"
+linker = ""
+
+[[epithet.verbal_agents]]
+text = "древней тенью"
+g = "f"
+linker = ""
+
+[[epithet.titles]]
+ms = "падший"
+fs = "падшая"
+mp = "падшие"
+fp = "падшие"
+
+[[epithet.titles]]
+ms = "заклятый"
+fs = "заклятая"
+mp = "заклятые"
+fp = "заклятые"
+
+[[epithet.titles]]
+ms = "падший"
+fs = "падшая"
+mp = "падшие"
+fp = "падшие"
+
+[[epithet.titles]]
+ms = "безликий"
+fs = "безликая"
+mp = "безликие"
+fp = "безликие"
+
+[epithet]
+proper_names = [
+    { name = "Зевс", patron = "Зевса", verbal = "Зевсом" },
+    { name = "Гера", patron = "Геры", verbal = "Герой" },
+    { name = "Аид", patron = "Аида", verbal = "Аидом" },
+    { name = "Персефона", patron = "Персефоны", verbal = "Персефоной" },
+    { name = "Афина", patron = "Афины", verbal = "Афиной" },
+    { name = "Аполлон", patron = "Аполлона", verbal = "Аполлоном" },
+    { name = "Артемида", patron = "Артемиды", verbal = "Артемидой" },
+    { name = "Афродита", patron = "Афродиты", verbal = "Афродитой" },
+    { name = "Арес", patron = "Ареса", verbal = "Аресом" },
+    { name = "Гермес", patron = "Гермеса", verbal = "Гермесом" },
+    { name = "Дионис", patron = "Диониса", verbal = "Дионисом" },
+    { name = "Посейдон", patron = "Посейдона", verbal = "Посейдоном" },
+    { name = "Медуза", patron = "Медузы", verbal = "Медузой" },
+    { name = "Прометей", patron = "Прометея", verbal = "Прометеем" },
+    { name = "Хаос", patron = "Хаоса", verbal = "Хаосом" },
+    { name = "Никта", patron = "Никты", verbal = "Никтой" },
+    { name = "Эреб", patron = "Эреба", verbal = "Эребом" },
+    { name = "Тартар", patron = "Тартара", verbal = "Тартаром" },
+    { name = "Мойра", patron = "Мойры", verbal = "Мойрой" },
+    { name = "Один", patron = "Одина", verbal = "Одином" },
+    { name = "Тор", patron = "Тора", verbal = "Тором" },
+    { name = "Локи", patron = "Локи", verbal = "Локи" },
+    { name = "Фрейя", patron = "Фрейи", verbal = "Фрейей" },
+    { name = "Хель", patron = "Хель", verbal = "Хель" },
+    { name = "Фенрир", patron = "Фенрира", verbal = "Фенриром" },
+    { name = "Ёрмунганд", patron = "Ёрмунганда", verbal = "Ёрмунгандом" },
+    { name = "Тюр", patron = "Тюра", verbal = "Тюром" },
+    { name = "Бальдр", patron = "Бальдра", verbal = "Бальдром" },
+    { name = "Хеймдалль", patron = "Хеймдалля", verbal = "Хеймдаллем" },
+    { name = "Сурт", patron = "Сурта", verbal = "Суртом" },
+    { name = "Имир", patron = "Имира", verbal = "Имиром" },
+    { name = "Ра", patron = "Ра", verbal = "Ра" },
+    { name = "Осирис", patron = "Осириса", verbal = "Осирисом" },
+    { name = "Исида", patron = "Исиды", verbal = "Исидой" },
+    { name = "Анубис", patron = "Анубиса", verbal = "Анубисом" },
+    { name = "Сет", patron = "Сета", verbal = "Сетом" },
+    { name = "Тот", patron = "Тота", verbal = "Тотом" },
+    { name = "Апоп", patron = "Апопа", verbal = "Апопом" },
+    { name = "Гор", patron = "Гора", verbal = "Гором" },
+    { name = "Бастет", patron = "Бастет", verbal = "Бастет" },
+    { name = "Сехмет", patron = "Сехмет", verbal = "Сехмет" },
+    { name = "Шива", patron = "Шивы", verbal = "Шивой" },
+    { name = "Вишну", patron = "Вишну", verbal = "Вишну" },
+    { name = "Брахма", patron = "Брахмы", verbal = "Брахмой" },
+    { name = "Кали", patron = "Кали", verbal = "Кали" },
+    { name = "Гаруда", patron = "Гаруды", verbal = "Гарудой" },
+    { name = "Индра", patron = "Индры", verbal = "Индрой" },
+    { name = "Морриган", patron = "Морриганы", verbal = "Морриганой" },
+    { name = "Цернунн", patron = "Цернунна", verbal = "Цернунном" },
+    { name = "Луг", patron = "Луга", verbal = "Лугом" },
+    { name = "Мерлин", patron = "Мерлина", verbal = "Мерлином" },
+    { name = "Моргана", patron = "Морганы", verbal = "Морганой" },
+    { name = "Артур", patron = "Артура", verbal = "Артуром" },
+    { name = "Ланселот", patron = "Ланселота", verbal = "Ланселотом" },
+    { name = "Мордред", patron = "Мордреда", verbal = "Мордредом" },
+    { name = "Левиафан", patron = "Левиафана", verbal = "Левиафаном" },
+    { name = "Вельзевул", patron = "Вельзевула", verbal = "Вельзевулом" },
+    { name = "Лилит", patron = "Лилит", verbal = "Лилит" },
+    { name = "Азазель", patron = "Азазеля", verbal = "Азазелем" },
+    { name = "Метатрон", patron = "Метатрона", verbal = "Метатроном" },
+    { name = "Михаил", patron = "Михаила", verbal = "Михаилом" },
+    { name = "Гавриил", patron = "Гавриила", verbal = "Гавриилом" },
+    { name = "Тиамат", patron = "Тиамат", verbal = "Тиамат" },
+    { name = "Энлиль", patron = "Энлиля", verbal = "Энлилем" },
+    { name = "Энки", patron = "Энки", verbal = "Энки" },
+    { name = "Иштар", patron = "Иштар", verbal = "Иштар" },
+    { name = "Гильгамеш", patron = "Гильгамеша", verbal = "Гильгамешем" },
+    { name = "Мардук", patron = "Мардука", verbal = "Мардуком" },
+    { name = "Чернобог", patron = "Чернобога", verbal = "Чернобогом" },
+    { name = "Перун", patron = "Перуна", verbal = "Перуном" },
+    { name = "Велес", patron = "Велеса", verbal = "Велесом" },
+    { name = "Баба-Яга", patron = "Бабы-Яги", verbal = "Бабой-Ягой" },
+    { name = "Кощей", patron = "Кощея", verbal = "Кощеем" },
+    { name = "Аматэрасу", patron = "Аматэрасу", verbal = "Аматэрасу" },
+    { name = "Сусаноо", patron = "Сусаноо", verbal = "Сусаноо" },
+    { name = "Идзанаги", patron = "Идзанаги", verbal = "Идзанаги" },
+    { name = "Идзанами", patron = "Идзанами", verbal = "Идзанами" },
+    { name = "Ктулху", patron = "Ктулху", verbal = "Ктулху" },
+    { name = "Ньярлатотеп", patron = "Ньярлатотепа", verbal = "Ньярлатотепом" },
+    { name = "Азатот", patron = "Азатота", verbal = "Азатотом" },
+    { name = "Йог-Сотоф", patron = "Йога-Сотофа", verbal = "Йогом-Сотофом" },
+    { name = "Хастур", patron = "Хастура", verbal = "Хастуром" },
+    { name = "Шуб-Ниггурат", patron = "Шуб-Ниггурат", verbal = "Шуб-Ниггурат" },
+    { name = "Дагон", patron = "Дагона", verbal = "Дагоном" },
+    { name = "Итака", patron = "Итаки", verbal = "Итакой" },
+    { name = "Цаатоггуа", patron = "Цаатоггуа", verbal = "Цаатоггуа" },
+    { name = "Абхот", patron = "Абхота", verbal = "Абхотом" },
+    { name = "Кербер", patron = "Кербера", verbal = "Кербером" },
+    { name = "Гидра", patron = "Гидры", verbal = "Гидрой" },
+    { name = "Химера", patron = "Химеры", verbal = "Химерой" },
+    { name = "Минотавр", patron = "Минотавра", verbal = "Минотавром" },
+    { name = "Кракен", patron = "Кракена", verbal = "Кракеном" },
+    { name = "Вафомет", patron = "Вафомета", verbal = "Вафометом" },
+    { name = "Асмодей", patron = "Асмодея", verbal = "Асмодеем" },
+    { name = "Мефистофель", patron = "Мефистофеля", verbal = "Мефистофелем" },
+    { name = "Геката", patron = "Гекаты", verbal = "Гекатой" },
+    { name = "Орфей", patron = "Орфея", verbal = "Орфеем" },
+    { name = "Ахилл", patron = "Ахилла", verbal = "Ахиллесом" },
+    { name = "Гектор", patron = "Гектора", verbal = "Гектором" },
+    { name = "Одиссей", patron = "Одиссея", verbal = "Одиссеем" },
+    { name = "Цирцея", patron = "Цирцеи", verbal = "Цирцеей" },
+    { name = "Калипсо", patron = "Калипсо", verbal = "Калипсо" },
+    { name = "Танатос", patron = "Танатоса", verbal = "Танатосом" },
+    { name = "Харон", patron = "Харона", verbal = "Хароном" },
+    { name = "Тифон", patron = "Тифона", verbal = "Тифоном" },
+    { name = "Протей", patron = "Протея", verbal = "Протеем" },
+    { name = "Тритон", patron = "Тритона", verbal = "Тритоном" },
+    { name = "Янус", patron = "Януса", verbal = "Янусом" },
+    { name = "Веста", patron = "Весты", verbal = "Вестой" },
+    { name = "Анра-Майнью", patron = "Анра-Майнью", verbal = "Анра-Майнью" },
+    { name = "Ахура-Мазда", patron = "Ахура-Мазды", verbal = "Ахура-Маздой" },
+    { name = "Митра", patron = "Митры", verbal = "Митрой" },
+    { name = "Зороастр", patron = "Зороастра", verbal = "Зороастром" },
+    { name = "Хануман", patron = "Ханумана", verbal = "Хануманом" },
+    { name = "Равана", patron = "Раваны", verbal = "Раваной" },
+    { name = "Рама", patron = "Рамы", verbal = "Рамой" },
+    { name = "Кришна", patron = "Кришны", verbal = "Кришной" },
+    { name = "Арджуна", patron = "Арджуны", verbal = "Арджуной" },
+    { name = "Ганеша", patron = "Ганеши", verbal = "Ганешей" },
+    { name = "Фафнир", patron = "Фафнира", verbal = "Фафниром" },
+    { name = "Зигфрид", patron = "Зигфрида", verbal = "Зигфридом" },
+    { name = "Брунгильда", patron = "Брунгильды", verbal = "Брунгильдой" },
+    { name = "Урд", patron = "Урд", verbal = "Урд" },
+    { name = "Верданди", patron = "Верданди", verbal = "Верданди" },
+    { name = "Скульд", patron = "Скульд", verbal = "Скульд" },
+]

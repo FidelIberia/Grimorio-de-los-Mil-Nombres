@@ -1,0 +1,725 @@
+[wisdom]
+fragments = [
+    "The spiral tightens where nothing was promised.",
+    "What was woven once still tugs at the corners.",
+    "Edges sharpen where the witness stayed too long.",
+    "Some doors only open after the third forgetting.",
+    "The salt remembers the tide; it does not argue.",
+    "A pattern repeated is not yet a law.",
+    "The center held because the rim forgot to fall.",
+    "Echoes trade names; only distance keeps them honest.",
+    "The field cools when the sky pretends to sleep.",
+    "Memory walks backward through smoke.",
+    "Not every lattice is a cage—some are maps.",
+    "The glyph knew the hand before the hand knew intent.",
+    "Stillness is not absence; it is pressure dressed as rest.",
+    "Two resonances met and called it coincidence.",
+    "The cartographer drew a shore; the sea revised it.",
+    "Mercy left a door ajar; discipline closed nothing.",
+    "Spark without root becomes weather.",
+    "Root without spark becomes monument.",
+    "The archive yawned; the epoch advanced anyway.",
+    "A line of power ends where curiosity hesitates.",
+    "The sky offered a bias; the spiral chose a step.",
+    "Harmony is a loan; the interest is attention.",
+    "What survives selection is not always what was loved.",
+    "The last report was true enough to mislead kindly.",
+    "The fossil hums under the new paint.",
+    "A taboo is only a love letter written backwards.",
+    "The lattice dreamed a symbol it had never hosted.",
+    "Absence piled until it became a second alphabet.",
+    "The watched corner grew warmer than the sunlit hall.",
+]
+
+[[epithet.stems]]
+text = "Bone Sack"
+g = "m"
+n = "s"
+family = "bone_sack"
+
+[[epithet.stems]]
+text = "Bone Sacks"
+g = "m"
+n = "p"
+family = "bone_sack"
+
+[[epithet.stems]]
+text = "Thorn"
+g = "m"
+n = "s"
+family = "thorn"
+
+[[epithet.stems]]
+text = "Thorns"
+g = "m"
+n = "p"
+family = "thorn"
+
+[[epithet.stems]]
+text = "Orb"
+g = "n"
+n = "s"
+family = "orb"
+
+[[epithet.stems]]
+text = "Orbs"
+g = "n"
+n = "p"
+family = "orb"
+
+[[epithet.stems]]
+text = "Maul"
+g = "m"
+n = "s"
+family = "maul"
+
+[[epithet.stems]]
+text = "Mauls"
+g = "m"
+n = "p"
+family = "maul"
+
+[[epithet.stems]]
+text = "Relic"
+g = "f"
+n = "s"
+family = "relic"
+traits = ["relic"]
+
+[[epithet.stems]]
+text = "Relics"
+g = "f"
+n = "p"
+family = "relic"
+traits = ["relic"]
+
+[[epithet.stems]]
+text = "Filament"
+g = "m"
+n = "s"
+family = "filament"
+traits = ["edge"]
+
+[[epithet.stems]]
+text = "Filaments"
+g = "m"
+n = "p"
+family = "filament"
+traits = ["edge"]
+
+[[epithet.stems]]
+text = "Broken Crown"
+g = "f"
+n = "s"
+family = "broken_crown"
+tags = ["object", "crown"]
+groups = ["damage"]
+
+[[epithet.stems]]
+text = "Broken Crowns"
+g = "f"
+n = "p"
+family = "broken_crown"
+tags = ["object", "crown"]
+groups = ["damage"]
+
+[[epithet.qualifiers]]
+text = "of the Abyss"
+
+[[epithet.qualifiers]]
+text = "of Despair"
+
+[[epithet.qualifiers]]
+text = "of Ashes"
+
+[[epithet.qualifiers]]
+text = "of Madness"
+
+[[epithet.qualifiers]]
+text = "of the Void"
+
+[[epithet.qualifiers]]
+text = "of Cold Iron"
+
+[[epithet.qualifiers]]
+text = "of Forgotten Names"
+
+[[epithet.qualifiers]]
+text = "of the Archives"
+n = "p"
+
+[[epithet.adjectives]]
+invariant = "keen"
+requires = ["weapon", "edge", "blade"]
+
+[[epithet.adjectives]]
+invariant = "frozen"
+
+[[epithet.adjectives]]
+invariant = "ravenous"
+kind = "living_trait"
+
+[[epithet.adjectives]]
+invariant = "withered"
+tags = ["organic", "wither"]
+
+[[epithet.adjectives]]
+invariant = "incandescent"
+
+[[epithet.adjectives]]
+invariant = "silent"
+
+[[epithet.adjectives]]
+invariant = "hollow"
+tags = ["hollow_volume"]
+
+[[epithet.adjectives]]
+invariant = "burning"
+tags = ["fire_active"]
+
+[[epithet.adjectives]]
+invariant = "somber"
+
+[[epithet.adjectives]]
+invariant = "ancient"
+
+[[epithet.adjectives]]
+invariant = "wandering"
+tags = ["wandering"]
+forbids = ["incorporeal"]
+
+[[epithet.adjectives]]
+invariant = "broken"
+group = "damage"
+
+[[epithet.curses]]
+invariant = "damned"
+
+[[epithet.curses]]
+invariant = "cursed"
+
+[[epithet.curses]]
+invariant = "hexed"
+
+[[epithet.curses]]
+invariant = "condemned"
+
+[[epithet.verbal_states]]
+invariant = "sealed"
+
+[[epithet.verbal_states]]
+invariant = "marked"
+verb_tags = ["mark"]
+requires_agent = true
+
+[[epithet.verbal_states]]
+invariant = "touched"
+verb_tags = ["touch"]
+requires_agent = true
+
+[[epithet.verbal_states]]
+invariant = "profaned"
+
+[[epithet.verbal_agents]]
+text = "the shadow"
+g = "f"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the orcs"
+g = "m"
+n = "p"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the abyss"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the darkness"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the dead"
+n = "p"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the gods"
+n = "p"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the serpent"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the red moon"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the black sun"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the storm"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the sea"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the titan"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the titans"
+n = "p"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the Fates"
+n = "p"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "the spiral"
+linker = "by"
+
+[[epithet.verbal_agents]]
+text = "judgment"
+linker = "by"
+kind = "abstract"
+
+[[epithet.verbal_states]]
+invariant = "devoured"
+verb_tags = ["devour"]
+requires = ["corpse", "person", "creature"]
+
+[[epithet.verbal_states]]
+invariant = "invoked"
+
+[[epithet.verbal_states]]
+invariant = "betrayed"
+kind = "agent_experience"
+
+[[epithet.verbal_states]]
+invariant = "buried"
+
+[[epithet.verbal_states]]
+invariant = "awakened"
+kind = "agent_experience"
+
+[[epithet.titles]]
+invariant = "the Mad"
+kind = "character_epithet"
+
+[[epithet.titles]]
+invariant = "the Forgotten"
+kind = "character_epithet"
+
+[[epithet.titles]]
+invariant = "the Nameless"
+kind = "character_epithet"
+
+[epithet]
+named_verbal_linker = "by"
+proper_names = [
+    "Azathoth",
+    "Yog-Sothoth",
+    "Nyarlathotep",
+    "Cthulhu",
+    "Hastur",
+    "Shub-Niggurath",
+    "Dagon",
+    "Nodens",
+    "Ithaqua",
+    "Tsathoggua",
+]
+
+[epithet.semantic]
+possessive_origin_qualifier_prefixes = ["of "]
+verbal_agent_linkers = [" by "]
+banned_verbal_surface_markers = [
+    "something",
+    "someone",
+    "by someone",
+    "by something",
+]
+verbal_agent_experience_markers = [
+    "betray",
+    "sworn",
+    "banish",
+    "awaken",
+    "flayed",
+]
+verbal_physical_markers = [
+    "crush",
+    "torn",
+    "burn",
+    "drown",
+    "buried",
+]
+living_trait_markers = [
+    "raven",
+    "voraz",
+    "жадн",
+    "алчн",
+    "pitiless",
+    "merciless",
+    "ruthless",
+    "cruel",
+    "implacable",
+    "ferocious",
+    "tenacious",
+    "безжалост",
+    "loco",
+    "loca",
+    "enloquec",
+    "demente",
+    "ciego",
+    "ciega",
+    "tuerto",
+    "tuerta",
+    " mad",
+    "mad ",
+    "insane",
+    "demented",
+    "blind",
+    "one-eyed",
+    "staunch",
+    "безум",
+    "слеп",
+    "безумн",
+    "упорн",
+]
+poetic_actor_tags = ["time", "divine", "storm", "void", "titan"]
+agent_required_verb_tags = ["touch", "mark", "drag"]
+agent_required_participle_markers = [
+    "tocad", "touch", "touched", "marcad", "marked", "arrastrad", "dragged", "коснув", "метк",
+]
+
+[[epithet.semantic.archetype_markers]]
+key = "weapon"
+markers = [
+    "espada", "sword", "lanza", "lance", "spear", "mazo", "maul", "hammer", "garra", "claw",
+    "hacha", "axe", "hoz", "sickle", "guadaña", "scythe", "colmillo", "fang", "guantelete",
+    "gauntlet", "daga", "dagger", "arco", "bow", "ballesta", "crossbow", "клинок", "меч", "копь",
+    "молот", "серп", "коса", "клык",
+]
+
+[[epithet.semantic.archetype_markers]]
+key = "edge"
+markers = [
+    "aguja", "needle", "daga", "dagger", "filamento", "filament", "hoz", "sickle", "guadaña",
+    "scythe", "colmillo", "fang", "espina", "thorn", "afilad", "sharp", "keen", "кинжал", "серп",
+    "клык", "остр", "режущ",
+]
+
+[[epithet.semantic.archetype_markers]]
+key = "vessel"
+markers = [
+    "cáliz", "caliz", "chalice", "grail", "copa", "cup", "vaso", "urna", "urn", "incensario",
+    "censer", "botella", "bottle", "candil", "lamp", "кубок", "чаша", "урн", "кадил",
+]
+
+[[epithet.semantic.archetype_markers]]
+key = "flame"
+markers = ["llama", "flame", "vela", "candle", "antorcha", "torch", "candil", "пламя", "свеч"]
+
+[[epithet.semantic.archetype_markers]]
+key = "icon"
+markers = ["icono", "icon", "ídolo", "idolo", "effigy", "икон"]
+
+[[epithet.semantic.archetype_markers]]
+key = "relic"
+markers = [
+    "reliquia", "relic", "amuleto", "amulet", "talismán", "talisman", "pergamino", "scroll",
+    "sortija", "ring", "sello", "seal", "llave", "key", "flauta", "flute", "реликв",
+]
+
+[[epithet.semantic.archetype_markers]]
+key = "crown"
+markers = ["corona", "crown", "корон"]
+
+[[epithet.semantic.archetype_markers]]
+key = "throne"
+markers = ["trono", "throne", "трон"]
+
+[[epithet.semantic.archetype_markers]]
+key = "mirror"
+markers = ["espejo", "mirror", "vitral", "stained glass", "зеркал"]
+
+[[epithet.semantic.archetype_markers]]
+key = "bell"
+markers = ["campana", "bell", "колокол"]
+
+[[epithet.semantic.stem_group_markers]]
+key = "damage"
+markers = [
+    "roto", "rota", "rotos", "rotas", "fractur", "quebrad", "agrietad", "partid", "broken",
+    "shatter", "crack", "сломан", "разбит", "треснув", "разбитый",
+]
+
+[[epithet.semantic.stem_group_markers]]
+key = "emptiness"
+markers = ["vacío", "vacía", "vacíos", "vacio", "hueco", "empty", "hollow", "пуст", "void"]
+
+[[epithet.semantic.stem_group_markers]]
+key = "decay"
+markers = ["putr", "podr", "marchit", "decay", "rotten", "гнил"]
+
+[[epithet.semantic.stem_group_markers]]
+key = "metal"
+markers = [
+    "platead", "oxid", "hierro", "iron", "silver", "metal", "желез", "серебр", "de hierro",
+    "iron ",
+]
+
+[[epithet.semantic.stem_class_markers]]
+key = "person"
+markers = [
+    "rey ", "reina ", "profeta", "profetisa", "señor ", "dama ", "caballero", "bruja", "brujo",
+    "oráculo", "oraculo", "hereje", "mártir", "martir", "apóstol", "apostol", "king ", "queen ",
+    "prophet", "witch", "oracle", "heretic", "martyr", "корол", "королев", "пророк", "ведьм",
+]
+
+[[epithet.semantic.stem_class_markers]]
+key = "divine"
+markers = ["dios", "diosa", "deidad", "god", "goddess", "deity", "бог", "богин"]
+
+[[epithet.semantic.stem_class_markers]]
+key = "creature"
+markers = ["dragón", "dragon", "serpiente", "serpent", "bestia", "beast", "gárgola", "gargoyle", "дракон", "зме"]
+
+[[epithet.semantic.motif_conflicts]]
+a = "fire"
+b = "cold"
+
+[[epithet.semantic.motif_conflicts]]
+a = "abyss"
+b = "celestial"
+
+[[epithet.semantic.tag_conflicts]]
+a = "incorporeo"
+b = "errante"
+
+[[epithet.semantic.motif_markers]]
+key = "abyss"
+markers = ["abyss", "depth", "chasm", "pit"]
+
+[[epithet.semantic.motif_markers]]
+key = "void"
+markers = ["void", "empty", "hollow"]
+
+[[epithet.semantic.motif_markers]]
+key = "fire"
+markers = ["fire", "flame", "burn", "ember"]
+
+[[epithet.semantic.motif_markers]]
+key = "cold"
+markers = ["cold", "frozen", "frost", "ice", "glacial"]
+
+[[epithet.semantic.motif_markers]]
+key = "blood"
+markers = ["blood", "bloody", "crimson"]
+
+[[epithet.semantic.motif_markers]]
+key = "shadow"
+markers = ["shadow", "dark", "night", "gloom"]
+
+[[epithet.semantic.motif_markers]]
+key = "sea"
+markers = ["sea", "ocean", "storm", "tide"]
+
+[[epithet.semantic.motif_markers]]
+key = "celestial"
+markers = ["moon", "sun", "star", "sky", "celestial"]
+
+banned_indefinite_markers = [
+    "someone",
+    "who knows",
+    "something",
+    "alguien",
+    "quien sabe",
+    "чем-то",
+    "кем-то",
+]
+banned_agent_markers = [
+    "primer nombre",
+    "first name",
+    "первое имя",
+]
+
+[[epithet.semantic.tag_conflicts]]
+a = "fire_active"
+b = "fire_done"
+
+[[epithet.semantic.adjective_stem_rules]]
+stem_tags = ["object", "relic"]
+forbid_kinds = ["living_trait"]
+
+[[epithet.semantic.adjective_stem_rules]]
+stem_classes = ["object", "abstract"]
+forbid_kinds = ["living_trait"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "edge"
+forbids = ["hollow_volume", "organic", "wither", "living_trait"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "mirror"
+forbids = ["organic", "wither", "living_trait"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "relic"
+forbids = ["living_trait", "organic", "wither"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "icon"
+forbids = ["living_trait", "organic"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "bell"
+forbids = ["living_trait", "organic"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "throne"
+forbids = ["organic", "wither", "living_trait"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "crown"
+forbids = ["organic", "wither", "living_trait"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "vessel"
+forbids = ["sharp", "edge", "living_trait"]
+
+[[epithet.semantic.archetype_compat]]
+archetype = "weapon"
+forbids = ["organic", "wither"]
+
+[[epithet.semantic.archetype_verbal_compat]]
+archetype = "mirror"
+forbids = ["tear", "drown", "flay"]
+
+[[epithet.semantic.archetype_verbal_compat]]
+archetype = "bell"
+forbids = ["tear", "drown"]
+
+[[epithet.semantic.archetype_verbal_compat]]
+archetype = "icon"
+forbids = ["tear", "drown"]
+
+[[epithet.semantic.archetype_verbal_compat]]
+archetype = "vessel"
+forbids = ["tear"]
+
+[[epithet.semantic.archetype_verbal_compat]]
+archetype = "weapon"
+forbids = ["tear", "drown"]
+
+[[epithet.semantic.archetype_verbal_compat]]
+archetype = "edge"
+forbids = ["tear", "drown"]
+
+[[epithet.semantic.archetype_verbal_compat]]
+archetype = "object"
+forbids = ["drown", "flay"]
+
+[[epithet.semantic.themes]]
+key = "funeral"
+markers = ["candle", "corpse", "crypt", "funer", "ash", "tombstone", "urn", "shroud", "coffin"]
+
+[[epithet.semantic.themes]]
+key = "fallen_royal"
+markers = ["throne", "crown", "king", "queen", "fallen", "empty"]
+
+[[epithet.semantic.themes]]
+key = "naming"
+markers = ["name", "named", "forgotten names", "nombr"]
+
+[[epithet.semantic.themes]]
+key = "serpent"
+markers = ["serpent", "serpiente", "snake", "зме", "змеин"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "tear"
+markers = ["torn", "ripped", "rent", "lacer", "shred"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "break"
+markers = ["broken", "shatter", "crack", "fractur", "splinter"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "seal"
+markers = ["seal", "mark"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "bury"
+markers = ["buried", "bur"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "drag"
+markers = ["drag", "dragged", "arrastr"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "touch"
+markers = ["tocad", "touch", "touched", "коснув"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "mark"
+markers = ["marcad", "marked", "мечен", "метк"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "drown"
+markers = ["ahogad", "drown", "drowned", "утопл", "захлёб"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "devour"
+markers = ["devorad", "devour", "devoured", "пожран", "сожран", "поглощ"]
+
+[[epithet.semantic.verb_tag_markers]]
+key = "flay"
+markers = ["desoll", "flay", "flayed", "ободран", "содран", "снят шкур"]
+
+[[epithet.semantic.agent_classes]]
+key = "storm"
+markers = ["storm", "tempest", "thunder", "gale"]
+
+[[epithet.semantic.agent_classes]]
+key = "titan"
+markers = ["titan", "titans"]
+
+[[epithet.semantic.agent_classes]]
+key = "void"
+markers = ["void", "abyss", "empt"]
+
+[[epithet.semantic.agent_classes]]
+key = "time"
+markers = ["time", "fate", "destiny", "age", "era", "chron"]
+
+[[epithet.semantic.agent_classes]]
+key = "mundane"
+markers = ["clock", "reloj", "watch"]
+
+[[epithet.semantic.agent_classes]]
+key = "abstract"
+markers = [
+    "juicio", "judgment", "judgement", "суд", "судом", "desesper", "despair", "olvido",
+    "forgetting", "locura", "madness", "la locura",
+]
+
+[[epithet.semantic.verb_agent_rules]]
+verb_tags = ["seal", "tear"]
+forbid_agent_classes = ["mundane"]
+hard = true
+
+[[epithet.semantic.verb_agent_rules]]
+verb_tags = ["seal"]
+forbid_agent_classes = ["storm"]
+
+[[epithet.semantic.verb_agent_rules]]
+verb_tags = ["seal"]
+allow_agent_classes = ["time", "divine", "void", "titan"]

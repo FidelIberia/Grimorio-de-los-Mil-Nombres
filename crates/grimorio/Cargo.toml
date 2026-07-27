@@ -1,0 +1,16 @@
+[package]
+name = "grimorio"
+version = "0.1.0"
+edition = "2021"
+description = "Grimorio de los Mil Nombres — whisper voices, locale tables, and generation epithets"
+license = "AGPL-3.0-only"
+authors = ["Fidel Herrera Castro <fherrera221@gmail.com>"]
+default-run = "grimorio"
+
+[[bin]]
+name = "grimorio"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grimorio-ru-names"
+version = "0.1.0"
+description = "Russian mythic proper-name catalog & declension tool for Grimorio locales"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "AGPL-3.0-only" }
+authors = [{ name = "Fidel Herrera Castro", email = "fherrera221@gmail.com" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+grimorio-ru-names = "grimorio_ru_names.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["grimorio_ru_names*"]
+
+[tool.setuptools.package-data]
+grimorio_ru_names = ["py.typed", "contract/proper_name.schema.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,1470 @@
+# Vocabulario extendido (se fusiona con es.toml en tiempo de compilación).
+
+[[epithet.stems]]
+text = "Cadáver"
+g = "m"
+n = "s"
+family = "corpse"
+tags = ["corpse"]
+
+[[epithet.stems]]
+text = "Espíritu"
+g = "m"
+n = "s"
+family = "spirit"
+tags = ["creature", "person"]
+
+[[epithet.stems]]
+text = "Espíritus"
+g = "m"
+n = "p"
+family = "spirit"
+tags = ["creature", "person"]
+
+[[epithet.stems]]
+text = "Cadáveres"
+g = "m"
+n = "p"
+family = "corpse"
+tags = ["corpse"]
+
+[[epithet.stems]]
+text = "Vela negra"
+g = "f"
+n = "s"
+family = "black_candle"
+traits = ["flame"]
+
+[[epithet.stems]]
+text = "Velas negras"
+g = "f"
+n = "p"
+family = "black_candle"
+traits = ["flame"]
+
+[[epithet.stems]]
+text = "Runa"
+g = "f"
+n = "s"
+family = "rune"
+
+[[epithet.stems]]
+text = "Runas"
+g = "f"
+n = "p"
+family = "rune"
+
+[[epithet.stems]]
+text = "Icono"
+g = "m"
+n = "s"
+family = "icon"
+tags = ["object", "icon", "relic"]
+
+[[epithet.stems]]
+text = "Iconos"
+g = "m"
+n = "p"
+family = "icon"
+tags = ["object", "icon", "relic"]
+
+[[epithet.stems]]
+text = "Máscara"
+g = "f"
+n = "s"
+family = "mask"
+
+[[epithet.stems]]
+text = "Máscaras"
+g = "f"
+n = "p"
+family = "mask"
+
+[[epithet.stems]]
+text = "Trono vacío"
+g = "m"
+n = "s"
+family = "empty_throne"
+tags = ["object", "throne"]
+groups = ["emptiness"]
+unique = true
+
+[[epithet.stems]]
+text = "Tronos vacíos"
+g = "m"
+n = "p"
+family = "empty_throne"
+tags = ["object", "throne"]
+groups = ["emptiness"]
+unique = true
+
+[[epithet.stems]]
+text = "Campana rota"
+g = "f"
+n = "s"
+family = "broken_bell"
+tags = ["object", "bell"]
+groups = ["damage"]
+
+[[epithet.stems]]
+text = "Campanas rotas"
+g = "f"
+n = "p"
+family = "broken_bell"
+tags = ["object", "bell"]
+groups = ["damage"]
+
+[[epithet.stems]]
+text = "Cráneo"
+g = "m"
+n = "s"
+family = "skull"
+
+[[epithet.stems]]
+text = "Cráneos"
+g = "m"
+n = "p"
+family = "skull"
+
+[[epithet.stems]]
+text = "Amuleto"
+g = "m"
+n = "s"
+family = "amulet"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Amuletos"
+g = "m"
+n = "p"
+family = "amulet"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Talismán"
+g = "m"
+n = "s"
+family = "talisman"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Talismanes"
+g = "m"
+n = "p"
+family = "talisman"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Sortija"
+g = "f"
+n = "s"
+family = "signet_ring"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Sortijas"
+g = "f"
+n = "p"
+family = "signet_ring"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Pergamino"
+g = "m"
+n = "s"
+family = "scroll"
+
+[[epithet.stems]]
+text = "Pergaminos"
+g = "m"
+n = "p"
+family = "scroll"
+
+[[epithet.stems]]
+text = "Guantelete"
+g = "m"
+n = "s"
+family = "gauntlet"
+tags = ["object", "weapon"]
+
+[[epithet.stems]]
+text = "Guanteletes"
+g = "m"
+n = "p"
+family = "gauntlet"
+tags = ["object", "weapon"]
+
+[[epithet.stems]]
+text = "Estandarte"
+g = "m"
+n = "s"
+family = "banner"
+
+[[epithet.stems]]
+text = "Estandartes"
+g = "m"
+n = "p"
+family = "banner"
+
+[[epithet.stems]]
+text = "Candil"
+g = "m"
+n = "s"
+family = "oil_lamp"
+tags = ["object", "flame"]
+
+[[epithet.stems]]
+text = "Candiles"
+g = "m"
+n = "p"
+family = "oil_lamp"
+tags = ["object", "flame"]
+
+[[epithet.stems]]
+text = "Hacha"
+g = "f"
+n = "s"
+family = "axe"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Hachas"
+g = "f"
+n = "p"
+family = "axe"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Daga"
+g = "f"
+n = "s"
+family = "dagger"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Dagas"
+g = "f"
+n = "p"
+family = "dagger"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Sudario"
+g = "m"
+n = "s"
+family = "shroud"
+
+[[epithet.stems]]
+text = "Sudarios"
+g = "m"
+n = "p"
+family = "shroud"
+
+[[epithet.stems]]
+text = "Ataúd"
+g = "m"
+n = "s"
+family = "coffin"
+
+[[epithet.stems]]
+text = "Ataúdes"
+g = "m"
+n = "p"
+family = "coffin"
+
+[[epithet.stems]]
+text = "Hoz"
+g = "f"
+n = "s"
+family = "sickle"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Hozas"
+g = "f"
+n = "p"
+family = "sickle"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Cadena de hierro"
+g = "f"
+n = "s"
+family = "iron_chain"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Cadenas de hierro"
+g = "f"
+n = "p"
+family = "iron_chain"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Grillete"
+g = "m"
+n = "s"
+family = "shackles"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Grilletes"
+g = "m"
+n = "p"
+family = "shackles"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Lápida"
+g = "f"
+n = "s"
+family = "tombstone"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Lápidas"
+g = "f"
+n = "p"
+family = "tombstone"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Sello de obsidiana"
+g = "m"
+n = "s"
+family = "obsidian_seal"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Sellos de obsidiana"
+g = "m"
+n = "p"
+family = "obsidian_seal"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Fragmento del vacío"
+g = "m"
+n = "s"
+family = "void_shard"
+tags = ["object"]
+groups = ["emptiness"]
+
+[[epithet.stems]]
+text = "Fragmentos del vacío"
+g = "m"
+n = "p"
+family = "void_shard"
+tags = ["object"]
+groups = ["emptiness"]
+
+[[epithet.stems]]
+text = "Urna funeraria"
+g = "f"
+n = "s"
+family = "funeral_urn"
+tags = ["object", "vessel", "relic"]
+
+[[epithet.stems]]
+text = "Urnas funerarias"
+g = "f"
+n = "p"
+family = "funeral_urn"
+tags = ["object", "vessel", "relic"]
+
+[[epithet.stems]]
+text = "Incensario"
+g = "m"
+n = "s"
+family = "censer"
+tags = ["object", "vessel", "flame"]
+
+[[epithet.stems]]
+text = "Incensarios"
+g = "m"
+n = "p"
+family = "censer"
+tags = ["object", "vessel", "flame"]
+
+[[epithet.stems]]
+text = "Astrolabio"
+g = "m"
+n = "s"
+family = "astrolabe"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Astrolabios"
+g = "m"
+n = "p"
+family = "astrolabe"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Monolito"
+g = "m"
+n = "s"
+family = "monolith"
+tags = ["object"]
+unique = true
+
+[[epithet.stems]]
+text = "Monolitos"
+g = "m"
+n = "p"
+family = "monolith"
+tags = ["object"]
+unique = true
+
+[[epithet.stems]]
+text = "Meteorito"
+g = "m"
+n = "s"
+family = "meteorite"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Meteoritos"
+g = "m"
+n = "p"
+family = "meteorite"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Gárgola"
+g = "f"
+n = "s"
+family = "gargoyle"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Gárgolas"
+g = "f"
+n = "p"
+family = "gargoyle"
+tags = ["object"]
+
+[[epithet.stems]]
+text = "Vitral roto"
+g = "m"
+n = "s"
+family = "broken_stained_glass"
+tags = ["object"]
+groups = ["damage"]
+
+[[epithet.stems]]
+text = "Vitrales rotos"
+g = "m"
+n = "p"
+family = "broken_stained_glass"
+tags = ["object"]
+groups = ["damage"]
+
+[[epithet.stems]]
+text = "Colmillo de serpiente"
+g = "m"
+n = "s"
+family = "serpent_fang"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Colmillos de serpiente"
+g = "m"
+n = "p"
+family = "serpent_fang"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Llave de la cripta"
+g = "f"
+n = "s"
+family = "crypt_key"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Llaves de la cripta"
+g = "f"
+n = "p"
+family = "crypt_key"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Corona de hierro"
+g = "f"
+n = "s"
+family = "iron_crown"
+tags = ["object", "crown"]
+unique = true
+
+[[epithet.stems]]
+text = "Coronas de hierro"
+g = "f"
+n = "p"
+family = "iron_crown"
+tags = ["object", "crown"]
+unique = true
+
+[[epithet.stems]]
+text = "Guadaña de guerra"
+g = "f"
+n = "s"
+family = "war_scythe"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Guadañas de guerra"
+g = "f"
+n = "p"
+family = "war_scythe"
+tags = ["object", "weapon", "edge"]
+
+[[epithet.stems]]
+text = "Flauta de hueso"
+g = "f"
+n = "s"
+family = "bone_flute"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Flautas de hueso"
+g = "f"
+n = "p"
+family = "bone_flute"
+tags = ["object", "relic"]
+
+[[epithet.stems]]
+text = "Cerradura maldita"
+g = "f"
+n = "s"
+family = "hex_lock"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Cerraduras malditas"
+g = "f"
+n = "p"
+family = "hex_lock"
+tags = ["object", "relic"]
+unique = true
+
+[[epithet.stems]]
+text = "Botella de bruja"
+g = "f"
+n = "s"
+family = "witch_bottle"
+tags = ["object", "vessel"]
+
+[[epithet.stems]]
+text = "Botellas de bruja"
+g = "f"
+n = "p"
+family = "witch_bottle"
+tags = ["object", "vessel"]
+
+[[epithet.qualifiers]]
+text = "del inframundo"
+
+[[epithet.qualifiers]]
+text = "de la noche eterna"
+g = "f"
+
+[[epithet.qualifiers]]
+text = "de la sangre antigua"
+g = "f"
+
+[[epithet.qualifiers]]
+text = "del reinado caído"
+
+[[epithet.qualifiers]]
+text = "de los sueños rotos"
+n = "p"
+
+[[epithet.qualifiers]]
+text = "de la serpiente"
+g = "f"
+
+[[epithet.qualifiers]]
+text = "del juicio final"
+
+[[epithet.adjectives]]
+ms = "plateado"
+fs = "plateada"
+mp = "plateados"
+fp = "plateadas"
+group = "metal"
+tags = ["metal"]
+
+[[epithet.adjectives]]
+ms = "envenenado"
+fs = "envenenada"
+mp = "envenenados"
+fp = "envenenadas"
+
+[[epithet.adjectives]]
+ms = "insondable"
+fs = "insondable"
+mp = "insondables"
+fp = "insondables"
+
+[[epithet.adjectives]]
+ms = "espectral"
+fs = "espectral"
+mp = "espectrales"
+fp = "espectrales"
+
+[[epithet.adjectives]]
+ms = "feral"
+fs = "feral"
+mp = "ferales"
+fp = "ferales"
+
+[[epithet.adjectives]]
+ms = "vetusto"
+fs = "vetusta"
+mp = "vetustos"
+fp = "vetustas"
+
+[[epithet.adjectives]]
+ms = "putrefacto"
+fs = "putrefacta"
+mp = "putrefactos"
+fp = "putrefactas"
+group = "decay"
+
+[[epithet.adjectives]]
+ms = "etéreo"
+fs = "etérea"
+mp = "etéreos"
+fp = "etéreas"
+
+[[epithet.adjectives]]
+ms = "sórdido"
+fs = "sórdida"
+mp = "sórdidos"
+fp = "sórdidas"
+
+[[epithet.adjectives]]
+ms = "despiadado"
+fs = "despiadada"
+mp = "despiadados"
+fp = "despiadadas"
+kind = "living_trait"
+
+[[epithet.adjectives]]
+ms = "fracturado"
+fs = "fracturada"
+mp = "fracturados"
+fp = "fracturadas"
+group = "damage"
+
+[[epithet.adjectives]]
+ms = "sangriento"
+fs = "sangrienta"
+mp = "sangrientos"
+fp = "sangrientas"
+
+[[epithet.adjectives]]
+ms = "crepuscular"
+fs = "crepuscular"
+mp = "crepusculares"
+fp = "crepusculares"
+
+[[epithet.adjectives]]
+ms = "abismal"
+fs = "abismal"
+mp = "abismales"
+fp = "abismales"
+
+[[epithet.adjectives]]
+ms = "retorcido"
+fs = "retorcida"
+mp = "retorcidos"
+fp = "retorcidas"
+
+[[epithet.adjectives]]
+ms = "lívido"
+fs = "lívida"
+mp = "lívidos"
+fp = "lívidas"
+tags = ["organic"]
+
+[[epithet.adjectives]]
+ms = "estrellado"
+fs = "estrellada"
+mp = "estrellados"
+fp = "estrelladas"
+
+[[epithet.adjectives]]
+ms = "carmesí"
+fs = "carmesí"
+mp = "carmesíes"
+fp = "carmesíes"
+
+[[epithet.adjectives]]
+ms = "agonizante"
+fs = "agonizante"
+mp = "agonizantes"
+fp = "agonizantes"
+
+[[epithet.adjectives]]
+ms = "titánico"
+fs = "titánica"
+mp = "titánicos"
+fp = "titánicas"
+
+[[epithet.adjectives]]
+ms = "incorpóreo"
+fs = "incorpórea"
+mp = "incorpóreos"
+fp = "incorpóreas"
+tags = ["incorporeo"]
+forbids = ["errante"]
+
+[[epithet.adjectives]]
+ms = "maldiciente"
+fs = "maldiciente"
+mp = "maldicientes"
+fp = "maldicientes"
+
+[[epithet.adjectives]]
+ms = "olvidado"
+fs = "olvidada"
+mp = "olvidados"
+fp = "olvidadas"
+
+[[epithet.adjectives]]
+ms = "juramentado"
+fs = "juramentada"
+mp = "juramentados"
+fp = "juramentadas"
+kind = "living_trait"
+
+[[epithet.curses]]
+ms = "execrado"
+fs = "execrada"
+mp = "execrados"
+fp = "execradas"
+
+[[epithet.curses]]
+ms = "blasfemado"
+fs = "blasfemada"
+mp = "blasfemados"
+fp = "blasfemadas"
+
+[[epithet.curses]]
+ms = "abominado"
+fs = "abominada"
+mp = "abominados"
+fp = "abominadas"
+
+[[epithet.curses]]
+ms = "anatematizado"
+fs = "anatematizada"
+mp = "anatematizados"
+fp = "anatematizadas"
+
+[[epithet.verbal_states]]
+ms = "devorado"
+fs = "devorada"
+mp = "devorados"
+fp = "devoradas"
+verb_tags = ["devour"]
+requires = ["corpse", "person", "creature"]
+
+[[epithet.verbal_states]]
+ms = "triturado"
+fs = "triturada"
+mp = "triturados"
+fp = "trituradas"
+
+[[epithet.verbal_states]]
+ms = "invocado"
+fs = "invocada"
+mp = "invocados"
+fp = "invocadas"
+
+[[epithet.verbal_states]]
+ms = "desterrado"
+fs = "desterrada"
+mp = "desterrados"
+fp = "desterradas"
+kind = "agent_experience"
+
+[[epithet.verbal_states]]
+ms = "desgarrado"
+fs = "desgarrada"
+mp = "desgarrados"
+fp = "desgarradas"
+verb_tags = ["tear"]
+
+[[epithet.verbal_states]]
+ms = "encadenado"
+fs = "encadenada"
+mp = "encadenados"
+fp = "encadenadas"
+
+[[epithet.verbal_states]]
+ms = "enterrado"
+fs = "enterrada"
+mp = "enterrados"
+fp = "enterradas"
+
+[[epithet.verbal_states]]
+ms = "ahogado"
+fs = "ahogada"
+mp = "ahogados"
+fp = "ahogadas"
+verb_tags = ["drown"]
+
+[[epithet.verbal_states]]
+ms = "traicionado"
+fs = "traicionada"
+mp = "traicionados"
+fp = "traicionadas"
+kind = "agent_experience"
+
+[[epithet.verbal_states]]
+ms = "consumido"
+fs = "consumida"
+mp = "consumidos"
+fp = "consumidas"
+
+[[epithet.verbal_states]]
+ms = "revelado"
+fs = "revelada"
+mp = "revelados"
+fp = "reveladas"
+
+[[epithet.verbal_states]]
+ms = "ocultado"
+fs = "ocultada"
+mp = "ocultados"
+fp = "ocultadas"
+
+[[epithet.verbal_states]]
+ms = "desollado"
+fs = "desollada"
+mp = "desollados"
+fp = "desolladas"
+verb_tags = ["flay"]
+requires = ["corpse", "person", "creature"]
+kind = "agent_experience"
+
+[[epithet.verbal_states]]
+ms = "jurado"
+fs = "jurada"
+mp = "jurados"
+fp = "juradas"
+kind = "agent_experience"
+
+[[epithet.verbal_states]]
+ms = "quemado"
+fs = "quemada"
+mp = "quemados"
+fp = "quemadas"
+
+[[epithet.adjectives]]
+ms = "quemado"
+fs = "quemada"
+mp = "quemados"
+fp = "quemadas"
+tags = ["fire_done"]
+
+[[epithet.verbal_states]]
+ms = "despierto"
+fs = "despierta"
+mp = "despiertos"
+fp = "despiertas"
+kind = "agent_experience"
+
+[[epithet.verbal_agents]]
+text = "el titán"
+g = "m"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "los titanes"
+g = "m"
+n = "p"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "el dragón"
+g = "m"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "las Moiras"
+g = "f"
+n = "p"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "el mar"
+g = "m"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "la tormenta"
+g = "f"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "los muertos"
+g = "m"
+n = "p"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "el primer nombre"
+g = "m"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "el reloj"
+g = "m"
+n = "s"
+linker = "por"
+tags = ["mundane"]
+
+[[epithet.verbal_agents]]
+text = "el tiempo"
+g = "m"
+n = "s"
+linker = "por"
+tags = ["time"]
+
+[[epithet.verbal_agents]]
+text = "el destino"
+g = "m"
+n = "s"
+linker = "por"
+tags = ["time"]
+
+[[epithet.verbal_agents]]
+text = "la serpiente"
+g = "f"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "el sol negro"
+g = "m"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "la luna roja"
+g = "f"
+n = "s"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "los dioses"
+g = "m"
+n = "p"
+linker = "por"
+
+[[epithet.verbal_agents]]
+text = "el juicio"
+g = "m"
+n = "s"
+linker = "por"
+kind = "abstract"
+
+[[epithet.titles]]
+ms = "el caído"
+fs = "la caída"
+mp = "los caídos"
+fp = "las caídas"
+
+[[epithet.titles]]
+ms = "el juramentado"
+fs = "la juramentada"
+mp = "los juramentados"
+fp = "las juramentadas"
+kind = "character_epithet"
+
+[[epithet.titles]]
+ms = "el sin rostro"
+fs = "la sin rostro"
+mp = "los sin rostro"
+fp = "las sin rostro"
+
+[epithet]
+proper_names = [
+    "Zeus",
+    "Hera",
+    "Hades",
+    "Perséfone",
+    "Atenea",
+    "Apolo",
+    "Artemisa",
+    "Afrodita",
+    "Ares",
+    "Hermes",
+    "Dioniso",
+    "Poseidón",
+    "Medusa",
+    "Prometeo",
+    "Caos",
+    "Nix",
+    "Erebo",
+    "Tártaro",
+    "Moira",
+    "Cloto",
+    "Láquesis",
+    "Átropos",
+    "Odín",
+    "Thor",
+    "Loki",
+    "Freyja",
+    "Hel",
+    "Fenrir",
+    "Jörmungandr",
+    "Tyr",
+    "Balder",
+    "Heimdall",
+    "Surtr",
+    "Ymir",
+    "Ra",
+    "Osiris",
+    "Isis",
+    "Anubis",
+    "Set",
+    "Thot",
+    "Apophis",
+    "Horus",
+    "Bastet",
+    "Sekhmet",
+    "Ptah",
+    "Sobek",
+    "Nephthys",
+    "Ereshkigal",
+    "Nergal",
+    "Shiva",
+    "Vishnu",
+    "Brahma",
+    "Kali",
+    "Garuda",
+    "Indra",
+    "Agni",
+    "Varuna",
+    "Yama",
+    "Morrigan",
+    "Cernunnos",
+    "Lugh",
+    "Dagda",
+    "Manannán",
+    "Cú Chulainn",
+    "Balor",
+    "Merlín",
+    "Morgana",
+    "Arturo",
+    "Lancelot",
+    "Ginebra",
+    "Mordred",
+    "Leviatán",
+    "Belcebú",
+    "Lilith",
+    "Azazel",
+    "Metatrón",
+    "Samael",
+    "Rafael",
+    "Miguel",
+    "Gabriel",
+    "Uriel",
+    "Tiamat",
+    "Enlil",
+    "Enki",
+    "Ishtar",
+    "Gilgamesh",
+    "Enkidu",
+    "Marduk",
+    "Anu",
+    "Ea",
+    "Chernobog",
+    "Perun",
+    "Veles",
+    "Baba Yaga",
+    "Koschei",
+    "Rusalka",
+    "Amaterasu",
+    "Susanoo",
+    "Izanagi",
+    "Izanami",
+    "Tsukuyomi",
+    "Raijin",
+    "Fujin",
+    "Oni",
+    "Tengu",
+    "Kitsune",
+    "Quetzalcóatl",
+    "Tezcatlipoca",
+    "Mictlantecuhtli",
+    "Huitzilopochtli",
+    "Angra Mainyu",
+    "Ahura Mazda",
+    "Mithra",
+    "Zoroastro",
+    "Cerbero",
+    "Hidra",
+    "Quimera",
+    "Minotauro",
+    "Kraken",
+    "Baphomet",
+    "Asmodeo",
+    "Mefistófeles",
+    "Astaroth",
+    "Baal",
+    "Moloch",
+    "Hécate",
+    "Eros",
+    "Psique",
+    "Orfeo",
+    "Eurídice",
+    "Aquiles",
+    "Héctor",
+    "Paris",
+    "Helena",
+    "Agamenón",
+    "Edipo",
+    "Antígona",
+    "Esfinge",
+    "Pegaso",
+    "Cíclope",
+    "Atlas",
+    "Cronos",
+    "Deméter",
+    "Hefesto",
+    "Thanatos",
+    "Caronte",
+    "Circe",
+    "Calipso",
+    "Ulises",
+    "Tiresias",
+    "Cassandra",
+    "Sibila",
+    "Gorgona",
+    "Echidna",
+    "Tifón",
+    "Typhon",
+    "Proteo",
+    "Tritón",
+    "Anfitrite",
+    "Polifemo",
+    "Janus",
+    "Vesta",
+    "Mithras",
+    "Baron Samedi",
+    "Papa Legba",
+    "Erzulie",
+    "Shango",
+    "Yemoja",
+    "Anansi",
+    "Coyote",
+    "Raven",
+    "Thunderbird",
+    "Wendigo",
+    "Banshee",
+    "Dullahan",
+    "Kelpie",
+    "Nessie",
+    "Yeti",
+    "Pangu",
+    "Nuwa",
+    "Fuxi",
+    "Jade Emperor",
+    "Sun Wukong",
+    "Nezha",
+    "Erlang Shen",
+    "Chang'e",
+    "Hou Yi",
+    "Zhong Kui",
+    "Mazu",
+    "Guanyin",
+    "Yanluo Wang",
+    "King Yama",
+    "Rangda",
+    "Barong",
+    "Hanuman",
+    "Ravana",
+    "Sita",
+    "Rama",
+    "Krishna",
+    "Arjuna",
+    "Durga",
+    "Ganesha",
+    "Skadi",
+    "Njord",
+    "Skírnir",
+    "Freyr",
+    "Idunn",
+    "Mimir",
+    "Níðhöggr",
+    "Ratatoskr",
+    "Sleipnir",
+    "Garmr",
+    "Auðumbla",
+    "Bestla",
+    "Borr",
+    "Vidar",
+    "Vali",
+    "Magni",
+    "Modi",
+    "Höðr",
+    "Frigg",
+    "Sif",
+    "Bragi",
+    "Forseti",
+    "Ullr",
+    "Kvasir",
+    "Alberich",
+    "Sigurd",
+    "Brunhild",
+    "Wotan",
+    "Parsifal",
+    "Tristán",
+    "Isolda",
+    "Gawain",
+    "Percival",
+    "Galahad",
+    "Bedivere",
+    "Kay",
+    "Ector",
+    "Bors",
+    "Lamorak",
+    "Palamedes",
+    "Tristram",
+    "Iseult",
+    "Mark",
+    "Igraine",
+    "Uther",
+    "Viviane",
+    "Nimue",
+    "Taliesin",
+    "Myrddin",
+    "Ceridwen",
+    "Arianrhod",
+    "Rhiannon",
+    "Pwyll",
+    "Arawn",
+    "Annwn",
+    "Beli Mawr",
+    "Lludd",
+    "Llefelys",
+    "Gwydion",
+    "Math",
+    "Lleu",
+    "Blodeuwedd",
+    "Don",
+    "Belenus",
+    "Epona",
+    "Taranis",
+    "Teutates",
+    "Esus",
+    "Sucellus",
+    "Nodens",
+    "Sucellos",
+    "Cernunnos",
+    "Silvanus",
+    "Faunus",
+    "Pan",
+    "Satyr",
+    "Diana",
+    "Juno",
+    "Minerva",
+    "Venus",
+    "Mars",
+    "Mercurius",
+    "Neptunus",
+    "Pluto",
+    "Vulcanus",
+    "Ceres",
+    "Bacchus",
+    "Proserpina",
+    "Dis Pater",
+    "Orcus",
+    "Februus",
+    "Mithra",
+    "Sol Invictus",
+    "Mithras",
+    "Attis",
+    "Cybele",
+    "Adonis",
+    "Tammuz",
+    "Dumuzi",
+    "Inanna",
+    "Ereshkigal",
+    "Nergal",
+    "Nabu",
+    "Ninurta",
+    "Nisaba",
+    "Ninhursag",
+    "Nammu",
+    "Absu",
+    "Lamashtu",
+    "Pazuzu",
+    "Lamia",
+    "Empusa",
+    "Mormo",
+    "Strix",
+    "Striga",
+    "Lamia",
+    "Empusa",
+    "Gello",
+    "Akelarre",
+    "Sorginak",
+    "Mari",
+    "Basajaun",
+    "Tartalo",
+    "Herensuge",
+    "Lamiñak",
+    "Irudi",
+    "Gaueko",
+    "Aatxe",
+    "Jentil",
+    "Tartalo",
+    "Gargantúa",
+    "Pantagruel",
+    "Don Quixote",
+    "Sancho",
+    "Fausto",
+    "Mephistopheles",
+    "Prospero",
+    "Ariel",
+    "Caliban",
+    "Sycorax",
+    "Setebos",
+    "Puck",
+    "Oberon",
+    "Titania",
+    "Mab",
+    "Robin Goodfellow",
+    "Herne",
+    "Cernunnos",
+    "Jack o' Lantern",
+    "Will-o'-the-Wisp",
+    "Ignis Fatuus",
+    "St. Elmo",
+    "Bielzebub",
+    "Ahriman",
+    "Spenta Mainyu",
+    "Vohu Manah",
+    "Asha Vahishta",
+    "Khshathra Vairya",
+    "Spenta Armaiti",
+    "Haurvatat",
+    "Ameretat",
+    "Angra Mainyu",
+    "Zarathustra",
+    "Ahura Mazda",
+    "Mithra",
+    "Verethragna",
+    "Tishtrya",
+    "Rashnu",
+    "Sraosha",
+    "Armaiti",
+    "Vayu",
+    "Vata",
+    "Rudra",
+    "Shiva",
+    "Parvati",
+    "Uma",
+    "Durga",
+    "Kali",
+    "Chandi",
+    "Bhavani",
+    "Lakshmi",
+    "Saraswati",
+    "Brahma",
+    "Vishnu",
+    "Narayana",
+    "Krishna",
+    "Radha",
+    "Balarama",
+    "Subhadra",
+    "Arjuna",
+    "Draupadi",
+    "Kunti",
+    "Gandhari",
+    "Dhritarashtra",
+    "Pandu",
+    "Vidura",
+    "Bhishma",
+    "Drona",
+    "Karna",
+    "Ashwatthama",
+    "Abhimanyu",
+    "Ghatotkacha",
+    "Hanuman",
+    "Sugriva",
+    "Vali",
+    "Jambavan",
+    "Vibhishana",
+    "Kumbhakarna",
+    "Indrajit",
+    "Meghanada",
+    "Surpanakha",
+    "Mandodari",
+    "Sita",
+    "Rama",
+    "Lakshmana",
+    "Bharata",
+    "Shatrughna",
+    "Dasharatha",
+    "Janaka",
+    "Vasishtha",
+    "Viswamitra",
+    "Agastya",
+    "Narada",
+    "Garuda",
+    "Shesha",
+    "Vasuki",
+    "Takshaka",
+    "Karkotaka",
+    "Airavata",
+    "Kamadhenu",
+    "Nandi",
+    "Ganesha",
+    "Kartikeya",
+    "Murugan",
+    "Ayyappan",
+    "Shasta",
+    "Aiyanar",
+    "Mariamman",
+    "Korravai",
+    "Kottravai",
+    "Pattini",
+    "Kannagi",
+    "Pattini",
+    "Timur",
+    "Gengis Kan",
+    "Atila",
+    "Carlomagno",
+    "Roland",
+    "Astolfo",
+    "Rinaldo",
+    "Fafnir",
+    "Sigurd",
+    "Brynhild",
+    "Siegfried",
+    "Kriemhild",
+    "Urðr",
+    "Verðandi",
+    "Skuld",
+    "Sigrdrífa",
+    "Skögul",
+]
