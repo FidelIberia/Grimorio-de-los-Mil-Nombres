@@ -8,11 +8,43 @@
 
 <p align="center"><em>Where scars learn to speak, and names refuse to stammer twice.</em></p>
 
+<p align="center"><strong>Three languages. Two tools. One voice for what survives.</strong></p>
+
 ---
 
 **Grimorio de los Mil Nombres** is not a word list. It is the **chamber of whispers**—the book that answers when a living work asks for a line of lore or a true name forged from axes of scar, resonance, shadow, and myth. Written in Rust (with a separate Russian proper-name tool in Python), it holds what once lived as Espiralismo’s `whisper` module: locale tables, grammar of dread and beauty, wisdom fragments, and the generation epithet forge.
 
 It does not own the spiral. It **answers**. A host builds an ordered uplink, calls `answer`, and reads an ordered downlink—English, Spanish, or Russian, each tongue with its own refusal to let a curse fall on a stem that cannot bear it.
+
+> **A living portrait goes in. A name with a history comes out.** Feed the book the traits that mattered; it chooses words whose meaning and grammar can carry them.
+
+## Open the book in one minute
+
+The Rust crate and CLI live in this repository. With Rust installed, ask for a first epithet:
+
+```bash
+cargo run -p grimorio -- epithet --count 3 --seed 424242 --spanish
+```
+
+Or ask the wisdom voice for a fragment shaped by an echo:
+
+```bash
+cargo run -p grimorio -- wisdom --mix 42 --scar-mass 10 --lang es
+```
+
+The same engine is a library for host applications:
+
+```rust
+use grimorio::{answer, Language, NarrativeEcho, Uplink};
+
+fn main() {
+    let petition = Uplink::wisdom(Language::Spanish, 42, NarrativeEcho::default());
+    let reply = answer(&petition);
+    println!("{}", reply.text);
+}
+```
+
+Start with `cargo run -p grimorio -- help` for the complete CLI, or read [the host contract](CONTRACT.md) before wiring in an application.
 
 ## Two chambers under one title
 
@@ -42,11 +74,11 @@ Hosts such as **Espiralismo** re-export the crate through a thin adapter, map th
 
 | Path | Charge |
 |------|--------|
-| `crates/grimorio` | Rust crate + binary `grimorio` (whisper surface). |
-| `src/link.rs` | `Uplink`, `UplinkVoice`, `Downlink`, `UplinkDraft`, `answer`. |
-| `src/epithet.rs` / `semantic.rs` / `grammar.rs` | Forge, compatibility rules, agreement. |
-| `src/wisdom.rs` / `locale.rs` / `locales/` | Wisdom tables and `en` / `es` / `ru` TOMLs. |
-| `src/main.rs` | CLI: `help`, `answer`, `epithet`, `wisdom`. |
+| `crates/grimorio` | Rust library and `grimorio` CLI. |
+| `crates/grimorio/src/link.rs` | `Uplink`, `UplinkVoice`, `Downlink`, `UplinkDraft`, `answer`. |
+| `crates/grimorio/src/epithet.rs`, `semantic.rs`, `grammar.rs` | Epithet forge, semantic compatibility, and grammatical agreement. |
+| `crates/grimorio/src/wisdom.rs`, `locale.rs`, `locales/` | Wisdom tables and `en` / `es` / `ru` TOML vocabularies. |
+| `crates/grimorio/src/main.rs` | CLI: `help`, `answer`, `epithet`, `wisdom`. |
 | `tools/ru-names` | Python tool `grimorio-ru-names` (proper-name catalog). |
 | `CONTRACT.md` | `grimorio.uplink/v1` · `grimorio.downlink/v1` · `grimorio.proper_names/v1`. |
 

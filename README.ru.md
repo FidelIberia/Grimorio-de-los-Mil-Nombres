@@ -8,11 +8,43 @@
 
 <p align="center"><em>Где шрамы учатся говорить, а имена отказываются заикаться дважды.</em></p>
 
+<p align="center"><strong>Три языка. Два инструмента. Один голос для того, что выжило.</strong></p>
+
 ---
 
 **Grimorio de los Mil Nombres** — не список слов. Это **палата шёпотов**: книга, что отвечает, когда живое дело просит строку знания или истинное имя, выкованное из осей шрама, резонанса, тени и мифа. Написанный на Rust (с отдельным Python-инструментом русских имён), он хранит то, что прежде жило как модуль `whisper` в Espiralismo: таблицы локалей, грамматика красоты и ужаса, обломки мудрости и кузница поколенческих эпитетов.
 
 Он не владеет спиралью. Он **отвечает**. Хост строит упорядоченный uplink, вызывает `answer` и читает упорядоченный downlink — по-английски, по-испански или по-русски; у каждого языка свой отказ уронить проклятие на ствол, который его не выдержит.
+
+> **Живой портрет входит. Имя с историей выходит.** Передайте книге важные черты — она подберёт слова, чей смысл и грамматика способны их вынести.
+
+## Откройте книгу за минуту
+
+Rust-crate и CLI находятся в этом репозитории. Установите Rust и попросите первые эпитеты:
+
+```bash
+cargo run -p grimorio -- epithet --count 3 --seed 424242 --spanish
+```
+
+Или попросите голос мудрости ответить фрагментом, окрашенным эхом:
+
+```bash
+cargo run -p grimorio -- wisdom --mix 42 --scar-mass 10 --lang ru
+```
+
+Тот же движок можно подключить к приложению как библиотеку:
+
+```rust
+use grimorio::{answer, Language, NarrativeEcho, Uplink};
+
+fn main() {
+    let petition = Uplink::wisdom(Language::Russian, 42, NarrativeEcho::default());
+    let reply = answer(&petition);
+    println!("{}", reply.text);
+}
+```
+
+Запустите `cargo run -p grimorio -- help`, чтобы увидеть все команды CLI, или сначала прочитайте [контракт для хостов](CONTRACT.md).
 
 ## Две палаты под одним именем
 
@@ -42,11 +74,11 @@
 
 | Путь | Назначение |
 |------|------------|
-| `crates/grimorio` | Rust crate + бинарник `grimorio` (поверхность whisper). |
-| `src/link.rs` | `Uplink`, `UplinkVoice`, `Downlink`, `UplinkDraft`, `answer`. |
-| `src/epithet.rs` / `semantic.rs` / `grammar.rs` | Кузница, правила совместимости, согласование. |
-| `src/wisdom.rs` / `locale.rs` / `locales/` | Таблицы мудрости и TOML `en` / `es` / `ru`. |
-| `src/main.rs` | CLI: `help`, `answer`, `epithet`, `wisdom`. |
+| `crates/grimorio` | Библиотека Rust и CLI `grimorio`. |
+| `crates/grimorio/src/link.rs` | `Uplink`, `UplinkVoice`, `Downlink`, `UplinkDraft`, `answer`. |
+| `crates/grimorio/src/epithet.rs`, `semantic.rs`, `grammar.rs` | Кузница эпитетов, семантическая совместимость и грамматическое согласование. |
+| `crates/grimorio/src/wisdom.rs`, `locale.rs`, `locales/` | Таблицы мудрости и TOML-словари `en` / `es` / `ru`. |
+| `crates/grimorio/src/main.rs` | CLI: `help`, `answer`, `epithet`, `wisdom`. |
 | `tools/ru-names` | Python-инструмент `grimorio-ru-names` (каталог имён). |
 | `CONTRACT.md` | `grimorio.uplink/v1` · `grimorio.downlink/v1` · `grimorio.proper_names/v1`. |
 
