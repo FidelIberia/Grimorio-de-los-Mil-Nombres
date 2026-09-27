@@ -141,7 +141,11 @@ pub fn format_glued_prologue(language: Language, lead: &str, name_phrase: &str) 
     match language {
         Language::English => title_case_epithet(&glued),
         Language::Spanish => title_case_epithet(&glued),
-        Language::Russian => russian_sentence_case_phrase(&glued),
+        Language::Russian => format!(
+            "{} {}",
+            capitalize_first(lead),
+            lowercase_first(name_phrase)
+        ),
     }
 }
 
@@ -151,6 +155,15 @@ pub fn capitalize_first(s: &str) -> String {
     match chars.next() {
         None => String::new(),
         Some(c) => c.to_uppercase().collect::<String>() + chars.as_str(),
+    }
+}
+
+#[must_use]
+pub fn lowercase_first(s: &str) -> String {
+    let mut chars = s.chars();
+    match chars.next() {
+        None => String::new(),
+        Some(c) => c.to_lowercase().collect::<String>() + chars.as_str(),
     }
 }
 

@@ -96,6 +96,23 @@ impl SemanticContext {
             themes,
         }
     }
+
+    /// Let later slots answer the motifs already spoken by earlier slots.
+    pub fn absorb_text(&mut self, text: &str, semantic: &SemanticTables) {
+        self.motifs.extend(infer_motifs(text, semantic));
+        self.themes
+            .extend(infer_marker_keys(text, &semantic.themes));
+    }
+}
+
+/// Explicitly incompatible motifs are a hard boundary; unmarked combinations stay poetic.
+#[must_use]
+pub fn motifs_compatible(ctx: &SemanticContext, text: &str, semantic: &SemanticTables) -> bool {
+    !keys_conflict(
+        &ctx.motifs,
+        &infer_motifs(text, semantic),
+        &semantic.motif_conflicts,
+    )
 }
 
 /// Whether a verbal phrase includes an explicit agent (linker or Russian instrumental).
@@ -596,7 +613,7 @@ pub fn allows_word(
     if word_forbids_stem_tags(word, ctx) {
         return false;
     }
-    if group_collides(word, ctx, modifier_state) {
+    if group_collides(word, ctx, modifier_state, semantic_rules) {
         return false;
     }
     if let Some(state) = modifier_state {
@@ -613,13 +630,21 @@ pub fn allows_word(
     true
 }
 
-pub fn register_modifier(state: &mut ModifierState, word: &InflectedWord, surface: Option<&str>) {
+pub fn register_modifier(
+    state: &mut ModifierState,
+    word: &InflectedWord,
+    surface: Option<&str>,
+    semantic: &SemanticTables,
+) {
     state.count += 1;
     if let Some(s) = surface {
         state.used_surfaces.insert(normalize_surface(s));
     }
-    if let Some(ref g) = word.group {
-        state.used_groups.insert(normalize_tag(g));
+    state.used_groups.extend(word_groups(word, semantic));
+    if let Some(s) = surface {
+        state
+            .used_groups
+            .extend(infer_groups_from_text(s, semantic));
     }
     for t in &word.tags {
         state.used_tags.insert(normalize_tag(t));
@@ -768,17 +793,19 @@ fn group_collides(
     word: &InflectedWord,
     ctx: &SemanticContext,
     modifier_state: Option<&ModifierState>,
+    semantic: &SemanticTables,
 ) -> bool {
-    let Some(ref g) = word.group else {
-        return false;
-    };
-    let g = normalize_tag(g);
-    if ctx.groups.contains(&g) {
-        return true;
+    word_groups(word, semantic).iter().any(|g| {
+        ctx.groups.contains(g) || modifier_state.is_some_and(|state| state.used_groups.contains(g))
+    })
+}
+
+fn word_groups(word: &InflectedWord, semantic: &SemanticTables) -> HashSet<String> {
+    let mut groups = infer_groups_from_text(&word_probe(word), semantic);
+    if let Some(ref group) = word.group {
+        groups.insert(normalize_tag(group));
     }
-    modifier_state
-        .map(|s| s.used_groups.contains(&g))
-        .unwrap_or(false)
+    groups
 }
 
 fn modifier_tag_collides(
@@ -1336,6 +1363,35 @@ mod tests {
             Some(&ModifierState::default()),
             &rules,
         ));
+    }
+
+    #[test]
+    fn untagged_damage_word_inherits_lexical_group() {
+        let rules = &super::super::locale::tables(super::super::Language::English)
+            .epithet
+            .semantic;
+        let ctx = SemanticContext::from_stem(&stem("Broken Crown", None, &[]), rules);
+        let fractured = InflectedWord {
+            invariant: Some("fractured".to_string()),
+            ..InflectedWord::default()
+        };
+        assert!(!allows_word(
+            &fractured,
+            &ctx,
+            PickSlot::Modifier,
+            None,
+            rules,
+        ));
+    }
+
+    #[test]
+    fn later_motifs_respect_explicit_conflicts() {
+        let rules = semantic_rules();
+        let mut ctx = SemanticContext::from_stem(&stem("Llama", None, &[]), &rules);
+        assert!(!motifs_compatible(&ctx, "helada", &rules));
+        assert!(motifs_compatible(&ctx, "sombría", &rules));
+        ctx.absorb_text("del abismo", &rules);
+        assert!(ctx.motifs.contains("abyss"));
     }
 
     #[test]
@@ -1974,12 +2030,13 @@ mod tests {
 
     #[test]
     fn reserved_surface_blocks_duplicate_modifier_pick() {
+        let rules = semantic_rules();
         let mut state = ModifierState::default();
         let estrellada = InflectedWord {
             fs: Some("estrellada".to_string()),
             ..InflectedWord::default()
         };
-        register_modifier(&mut state, &estrellada, Some("estrellada"));
+        register_modifier(&mut state, &estrellada, Some("estrellada"), &rules);
         assert!(surface_already_used("estrellada", &state));
         assert!(surface_already_used("Estrellada", &state));
     }
@@ -1994,7 +2051,7 @@ mod tests {
             ..InflectedWord::default()
         };
         let mut state = ModifierState::default();
-        register_modifier(&mut state, &ardiente, None);
+        register_modifier(&mut state, &ardiente, None, &rules);
         let quemado = InflectedWord {
             ms: Some("quemado".to_string()),
             tags: vec!["fire_done".to_string()],
@@ -2084,19 +2141,19 @@ mod tests {
 
     #[test]
     fn incorporeal_and_wandering_conflict() {
+        let rules = semantic_rules();
         let incorp = InflectedWord {
             ms: Some("incorpóreo".to_string()),
             tags: vec!["incorporeo".to_string()],
             ..InflectedWord::default()
         };
         let mut state = ModifierState::default();
-        register_modifier(&mut state, &incorp, None);
+        register_modifier(&mut state, &incorp, None, &rules);
         let errante = InflectedWord {
             ms: Some("errante".to_string()),
             tags: vec!["errante".to_string()],
             ..InflectedWord::default()
         };
-        let rules = semantic_rules();
         assert!(!allows_word(
             &errante,
             &SemanticContext::from_stem(&stem("Orbe", None, &[]), &rules),

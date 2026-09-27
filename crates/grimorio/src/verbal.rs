@@ -70,7 +70,9 @@ pub fn forge_verbal_phrase(
         .enumerate()
         .filter_map(|(i, s)| {
             let surface = s.participle(key)?;
-            if semantic::allows_verbal_state(s, semantics, semantic_rules) {
+            if semantic::allows_verbal_state(s, semantics, semantic_rules)
+                && semantic::motifs_compatible(semantics, surface, semantic_rules)
+            {
                 Some((i, surface))
             } else {
                 None
@@ -92,6 +94,8 @@ pub fn forge_verbal_phrase(
     let verb_tags = semantic::infer_verb_tags(state, semantic_rules);
     let mut forge_with_verb = forge.clone();
     forge_with_verb.verb_tags = verb_tags;
+    let mut phrase_semantics = semantics.clone();
+    phrase_semantics.absorb_text(participle, semantic_rules);
 
     let needs_agent = semantic::verbal_state_requires_agent(state, semantic_rules);
     let named_agents: Vec<AgentEntry> = proper_names
@@ -110,6 +114,7 @@ pub fn forge_verbal_phrase(
             &named_agents,
             false,
             &forge_with_verb,
+            &phrase_semantics,
             semantic_rules,
         )
         .or_else(|| {
@@ -120,6 +125,7 @@ pub fn forge_verbal_phrase(
                 &named_agents,
                 true,
                 &forge_with_verb,
+                &phrase_semantics,
                 semantic_rules,
             )
         })
@@ -136,6 +142,7 @@ pub fn forge_verbal_phrase(
                 &named_agents,
                 true,
                 &forge_with_verb,
+                &phrase_semantics,
                 semantic_rules,
             )
         } else {
@@ -146,6 +153,7 @@ pub fn forge_verbal_phrase(
                 &named_agents,
                 false,
                 &forge_with_verb,
+                &phrase_semantics,
                 semantic_rules,
             )
         }
@@ -170,13 +178,16 @@ fn pick_agent<'a>(
     named_agents: &'a [AgentEntry],
     indefinite: bool,
     forge: &VerbalForgeContext,
+    semantics: &SemanticContext,
     semantic_rules: &SemanticTables,
 ) -> Option<&'a AgentEntry> {
     let pool: Vec<&AgentEntry> = agents
         .iter()
         .chain(named_agents.iter())
         .filter(|a| {
-            a.indefinite == indefinite && semantic::allows_verbal_agent(a, forge, semantic_rules)
+            a.indefinite == indefinite
+                && semantic::allows_verbal_agent(a, forge, semantic_rules)
+                && semantic::motifs_compatible(semantics, &a.text, semantic_rules)
         })
         .collect();
     if pool.is_empty() {
