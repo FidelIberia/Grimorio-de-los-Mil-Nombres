@@ -1,9 +1,9 @@
 //! Generation epithet forge — inflected Diablo-style names with optional patronymics.
 
 use super::common::{fnv1a64, mix_u64, quantize01, Language};
-use super::portrait::StandoutPortrait;
 use super::grammar::{AgreementKey, InflectedWord, QualifierEntry, StemEntry};
 use super::locale;
+use super::portrait::StandoutPortrait;
 use super::semantic::{
     self, ModifierState, PickSlot, SemanticContext, VerbalForgeContext, VerbalPlacement,
 };

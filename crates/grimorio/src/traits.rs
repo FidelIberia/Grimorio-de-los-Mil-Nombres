@@ -65,17 +65,11 @@ impl WhisperHub {
                         empty: true,
                     };
                 };
-                Uplink::generation_epithet(
-                    request.language,
-                    request.generation,
-                    standout.clone(),
-                )
+                Uplink::generation_epithet(request.language, request.generation, standout.clone())
             }
-            WhisperKind::SampleEpithet => Uplink::sample_epithet(
-                request.language,
-                request.generation,
-                request.mix,
-            ),
+            WhisperKind::SampleEpithet => {
+                Uplink::sample_epithet(request.language, request.generation, request.mix)
+            }
         };
         answer(&uplink)
     }

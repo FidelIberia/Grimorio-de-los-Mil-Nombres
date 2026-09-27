@@ -135,9 +135,7 @@ impl VoiceKind {
     pub fn parse(raw: &str) -> Option<Self> {
         match raw.trim().to_ascii_lowercase().as_str() {
             "wisdom" | "w" => Some(Self::Wisdom),
-            "generation_epithet" | "epithet" | "generation" | "g" => {
-                Some(Self::GenerationEpithet)
-            }
+            "generation_epithet" | "epithet" | "generation" | "g" => Some(Self::GenerationEpithet),
             "sample_epithet" | "sample" | "s" => Some(Self::SampleEpithet),
             _ => None,
         }

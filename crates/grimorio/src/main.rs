@@ -147,8 +147,7 @@ fn run_answer(args: &[String], force_voice: Option<VoiceKind>) -> Result<(), Str
                 i += 2;
             }
             "--soul" => {
-                draft.soul_attunement_quant =
-                    Some(parse_u8(need_value(args, i, arg)?, "--soul")?);
+                draft.soul_attunement_quant = Some(parse_u8(need_value(args, i, arg)?, "--soul")?);
                 i += 2;
             }
             // Generation epithet / standout
@@ -185,13 +184,11 @@ fn run_answer(args: &[String], force_voice: Option<VoiceKind>) -> Result<(), Str
                 i += 2;
             }
             "--mutation" | "--mutation-pressure" => {
-                draft.mutation_pressure =
-                    Some(parse_f32(need_value(args, i, arg)?, "--mutation")?);
+                draft.mutation_pressure = Some(parse_f32(need_value(args, i, arg)?, "--mutation")?);
                 i += 2;
             }
             "--symbolic" | "--symbolic-density" => {
-                draft.symbolic_density =
-                    Some(parse_f32(need_value(args, i, arg)?, "--symbolic")?);
+                draft.symbolic_density = Some(parse_f32(need_value(args, i, arg)?, "--symbolic")?);
                 i += 2;
             }
             "--memory" | "--memory-depth" => {
@@ -253,16 +250,13 @@ fn need_value<'a>(args: &'a [String], i: usize, flag: &str) -> Result<&'a str, S
 }
 
 fn parse_language(raw: &str) -> Result<Language, String> {
-    Language::from_cli_flag(raw.trim()).ok_or_else(|| {
-        format!("invalid language `{raw}` (use en|es|ru / english|spanish|russian)")
-    })
+    Language::from_cli_flag(raw.trim())
+        .ok_or_else(|| format!("invalid language `{raw}` (use en|es|ru / english|spanish|russian)"))
 }
 
 fn parse_voice(raw: &str) -> Result<VoiceKind, String> {
     VoiceKind::parse(raw).ok_or_else(|| {
-        format!(
-            "invalid voice `{raw}` (use wisdom|generation_epithet|sample_epithet)"
-        )
+        format!("invalid voice `{raw}` (use wisdom|generation_epithet|sample_epithet)")
     })
 }
 
